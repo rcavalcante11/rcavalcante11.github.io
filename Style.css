@@ -19,8 +19,7 @@ nav {
     align-items: center;
     gap: 50px;
     padding: 15px 50px;
-    box-shadow: 10px 10px 10px;
-    /*rgba?*/
+    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.548);
     color: white;
 }
 
@@ -32,7 +31,7 @@ nav ul {
 }
 
 li {
-    width: 70px
+    width: 70px;
 }
 
 li a {
@@ -44,8 +43,8 @@ li a {
 }
 
 li a:hover {
-    color: #f1c40f;
-    border-bottom: 4px #f1c40f solid;
+    color: #AC1727;
+    border-bottom: 4px #AC1727 solid;
     transition: 0.5s;
 }
 
@@ -55,8 +54,8 @@ li a:hover {
 
 @media screen and (max-width: 700px) {
 
-    /*hamburguer menu*/
-    .hamburguer {
+    /* HAMBURGER */
+    .hamburger {
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -72,8 +71,8 @@ li a:hover {
         width: 35px;
     }
 
-    .line-rotate {
-        background-color: rgb(85, green, blue);
+    .lines-rotate {
+        background-color: rgb(85, 84, 84);
         border-radius: 5px;
     }
 
@@ -90,15 +89,14 @@ li a:hover {
         position: absolute;
         top: -300px;
         right: 0;
-        background-color: #f1c40f;
+        background-color: #AC1727;
         padding: 35px 0;
         border-radius: 0 0 20px 20px;
-        box-shadow: 0px 5px 5px;
-        /*rgba?---------------*/
+        box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.363);
     }
 
     li a {
-        color: rgba(12, 11, 11, 0.836)
+        color: rgba(12, 11, 11, 0.836);
     }
 
     li {
@@ -112,5 +110,42 @@ li a:hover {
         border: none;
         letter-spacing: 3px;
     }
+}
 
+/* SKIP */
+footer {
+    position: absolute;
+    bottom: 30px;
+    margin: 30px;
+}
+
+footer a {
+    color: grey;
+}
+
+.main-container {
+    background-color: #121727;
+    background-position: center;
+    /* Centraliza a imagem */
+    /* Cor de fundo cinza claro */
+    min-height: 100vh;
+    /* Altura mínima para ocupar toda a tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilo para o conteúdo principal */
+.main-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.first-title {
+    color: #AC1727;
 }
